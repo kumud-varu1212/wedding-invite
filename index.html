@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Milinda &amp; Kumudi | Wedding Invitation</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:radial-gradient(ellipse 45% 60% at 50% 50%,#fbefdc,#fffaf1 70%)}
+.phone{position:absolute;top:50%;left:50%;width:468px;height:984px;margin:-492px 0 0 -234px;transform:scale(var(--s,1));background:#0a0a0a;border-radius:70px;padding:14px;box-shadow:0 0 0 3px #c9c4bb,0 0 0 5px #8f8a82,0 40px 80px rgba(60,40,10,.28)}
+.btn{position:absolute;width:5px;background:#9d978d;border-radius:3px}
+.b1{left:-8px;top:150px;height:36px}.b2{left:-8px;top:215px;height:62px}.b3{left:-8px;top:290px;height:62px}.pw{right:-8px;top:250px;height:100px}
+.screen{position:relative;width:440px;height:956px;border-radius:56px;overflow:hidden;background:#fff}
+.status{height:54px;display:flex;align-items:center;justify-content:space-between;padding:6px 34px 0 46px;font:600 17px -apple-system,'SF Pro Text',Inter,Arial,sans-serif;color:#000}
+.island{position:absolute;top:11px;left:50%;width:126px;height:37px;margin-left:-63px;background:#000;border-radius:20px}
+iframe{display:block;width:440px;height:902px;border:0}
+.home{position:absolute;bottom:8px;left:50%;width:140px;height:5px;margin-left:-70px;background:#111;border-radius:3px;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="phone">
+  <i class="btn b1"></i><i class="btn b2"></i><i class="btn b3"></i><i class="btn pw"></i>
+  <div class="screen">
+    <div class="status">
+      <span>9:41</span><i class="island"></i>
+      <svg width="68" height="14" viewBox="0 0 68 14"><g fill="#000"><rect y="9" width="3" height="4" rx="1"/><rect x="5" y="6" width="3" height="7" rx="1"/><rect x="10" y="3" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="13" rx="1"/><circle cx="32.5" cy="11.5" r="1.4"/><rect x="44" y="1" width="20" height="11" rx="3.5"/><rect x="65.5" y="4.5" width="1.5" height="4" rx=".7"/></g><path d="M26 4.5a9 9 0 0 1 13 0M29 8a5 5 0 0 1 7 0" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+    <iframe id="inv" title="Wedding invitation"></iframe>
+    <i class="home"></i>
+  </div>
+</div>
+<script>
+const target = 'invitation.html' + location.search;
+if (matchMedia('(max-width:899px),(pointer:coarse)').matches) {
+  location.replace(target);            // phones & tablets: open normally
+} else {
+  document.getElementById('inv').src = target;   // desktop: show inside iPhone
+  const fit = () => document.documentElement.style.setProperty('--s', Math.min(1, (innerHeight - 40) / 984, (innerWidth - 40) / 468));
+  fit(); addEventListener('resize', fit);
+}
+</script>
+</body>
+</html>

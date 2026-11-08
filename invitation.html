@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<title>Milinda &amp; Kumudi | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cover" id="cover">
+  <p class="kicker">You are invited</p>
+  <h1>Milinda <em>&amp;</em> Kumudi</h1>
+  <button id="openBtn" type="button">Open Invitation</button>
+</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="dia" viewBox="0 0 24 24"><path d="M12 2l10 10-10 10L2 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-8.5-5.4-8.5-11.2A4.8 4.8 0 0 1 12 7a4.8 4.8 0 0 1 8.5 2.8C20.5 15.6 12 21 12 21z"/></symbol>
+  <symbol id="cam" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+</svg>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="floral l" src="assets/floral-left.webp" alt="" onerror="this.remove()">
+  <img class="floral r" src="assets/floral-right.webp" alt="" onerror="this.remove()">
+<div class="petals" aria-hidden="true"></div>
+  <p class="kicker rise">Together with their families</p>
+  <div class="orn rise"><span></span><svg><use href="#dia"/></svg><span></span></div>
+  <h1 class="rise">Milinda <em>&amp;</em> Kumudi</h1>
+  <div class="orn rise"><span></span><svg><use href="#dia"/></svg><span></span></div>
+  <p class="guest rise" id="guest"></p>
+  <p class="invite rise">Request the honour of your presence<br>at the celebration of their marriage</p>
+  <p class="lbl rise" id="day">Saturday</p>
+  <p class="date rise" id="date">12th December 2026</p>
+  <p class="lbl s rise" id="time">At 9:00 <A> </A>M</p>
+  <p class="lbl s rise" id="venue">Asliya Golden Cassandra</p>
+  <img class="couple rise" src="New Assets/WEBp/Couple.webp" alt="Milinda & Kumudi">
+  <a class="scroll" href="#count" aria-label="Scroll down"><span>Scroll</span><i></i></a>
+</header>
+
+<!-- COUNTDOWN -->
+<section class="sec dark" id="count">
+  <div class="orn"><span></span><svg><use href="#dia"/></svg><span></span></div>
+  <h2 class="eye gold">Counting down to the wedding</h2>
+  <div class="cards" id="cards"></div>
+  <div class="orn"><span></span><svg><use href="#dia"/></svg><span></span></div>
+</section>
+
+<!-- STORY -->
+<section class="sec glow" id="story">
+  <p class="eye reveal">Our Story</p><i class="bar reveal"></i>
+  <h2 class="reveal">Two Hearts, One Journey</h2>
+  <p class="body reveal">From a chance meeting to a beautiful friendship, and now to a lifetime together. We are blessed to begin this new chapter of our lives and can't wait to celebrate with you.</p>
+  <img class="poruwa reveal" src="New Assets/WEBp/Poruwa.webp" alt="" onerror="this.remove()">
+</section>
+
+<!-- EVENTS -->
+<section class="sec glow top" id="events">
+  <p class="eye reveal">Events</p><i class="bar reveal"></i>
+  <h2 class="reveal">Celebrate With Us</h2>
+  <div class="events" id="eventList"></div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec" id="gallery">
+  <p class="eye gold reveal">Gallery</p>
+  <h2 class="reveal">Our Moments</h2>
+  <div class="hdiv reveal"><span></span><svg><use href="#heart"/></svg><span></span></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- LOCATION -->
+<section class="sec warm" id="location">
+  <p class="eye gold reveal">Location</p>
+  <h2 class="reveal">Wedding Venue</h2>
+  <p class="vname reveal"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.800 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Asliya Golden Cassandra</p>
+  <p class="vsub reveal">Colombo, Sri Lanka</p>
+  <div class="map reveal"><iframe loading="lazy" title="Map" src="https://www.google.com/maps?q=Asliya+Golden+Cassandra+Colombo&output=embed"></iframe></div>
+  <button class="cal reveal" id="calBtn" type="button">
+    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" stroke-linecap="round"/></svg></span>
+    <span class="ct"><b>Add to Calendar</b><small>Save the date to your calendar</small></span>
+    <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></span>
+  </button>
+</section>
+
+<!-- THANK YOU -->
+<footer class="sec thanks">
+  <p class="eye wl">With love,</p>
+  <p class="couple-names">Milinda &amp; Kumudi</p>
+  <p class="meta">November 27, 2026 · Asliya Golden Cassandra</p>
+ <div class="calls">
+  <a class="callbtn" href="tel:+94763340226"><svg><use href="#ph"/></svg>Call Heshan (Groom Side)</a>
+  <a class="callbtn" href="tel:+94768039292"><svg><use href="#ph"/></svg>Call Sarasa (Bride Side)</a>
+</div>
+  <h2>Thank You</h2>
+  <p class="meta big">Thank you for being a part of our special day!</p>
+  <svg class="gh"><use href="#heart"/></svg>
+  <p class="credit">Created with <svg><use href="#heart"/></svg> ELVIX Moments</p>
+</footer>
+<audio id="bgm" src="New Assets/music.mp3" preload="auto"></audio>
+<button id="musicBtn" class="music" type="button" aria-label="Toggle music"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/></svg></button>
+<script src="script.js"></script>
+</body>
+</html>
